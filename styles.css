@@ -1,0 +1,135 @@
+body{
+    font-family: "Open Sans", sans-serif;
+	line-height: 1.25;
+    /*background-color: gray;*/
+}
+
+.container{
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+/* Tabela */
+.obrigatorio{
+    color: red;
+}
+.informacao{
+    color:blue;
+}
+.tb-padrao{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.tb-padrao caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+}
+
+.tb-padrao tr {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+}
+
+.tb-padrao th{
+    text-align: left;
+    font-size: .85em;
+    letter-spacing: .1em;
+}
+
+.tb-padrao th, .tb-padrao td {
+	vertical-align: top;
+    padding: .625em;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    --border-bottom: 1px dotted black;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Input  */
+input{
+	border: 1px solid gray;
+	border-radius: 4px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+    width: 100%;
+    padding: 5px 0px 5px 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+input:disabled{
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+	background-color: transparent;
+    padding-left: 0;
+    color: #000;
+    border: 0 solid #efefef;
+    transition: all 0.1s ease-in-out;
+}
+
+input.invalido{
+	border: 2px solid red;
+	border-radius: 4px;
+}
+
+span.invalido{
+	font-size: 0.85em;
+    font-style: italic;
+    color: red;
+}
+
+/* Ações */
+
+.acoes{
+	padding-top: 1.1em !important;
+	display: flex;
+}
+
+span[class^="grupo"]{
+	margin-right: 10px;
+	cursor: pointer;
+	color: blue;
+}
+
+span[class^="grupo"]:hover{
+	text-decoration: underline;
+}
+
+.grupo-2{
+	display: none;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 600px) {
+    .tb-padrao{
+    }
+}
